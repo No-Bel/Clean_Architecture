@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             binding.dataTv.text = "Save result = $result"
         }
 
+        //
         binding.receiveBtn.setOnClickListener {
             val userName = getUserNameUseCase.execute()
             binding.dataTv.text = "${userName.firstName}"

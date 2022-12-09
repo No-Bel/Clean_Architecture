@@ -16,7 +16,6 @@ class SharedPrefUserStorage(context: Context) : UserStorage {
 
 
     override fun save(user: User): Boolean {
-
         sharedPreferences.edit().putString(KEY_FIRS_NAME, user.firstName).apply()
         sharedPreferences.edit().putString(KEY_LAST_NAME, user.lastName).apply()
         return true
